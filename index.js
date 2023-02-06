@@ -12,12 +12,8 @@ function generateRandomDice() {
 
 if(dice1Number > dice2Number) {
     document.querySelector(".winner").innerHTML = "Player 1 wins";
-}
-
-if(dice2Number > dice1Number) {
+} else if(dice2Number > dice1Number) {
     document.querySelector(".winner").innerHTML = "Player 2 wins";
-}
-
-if(dice1Number === dice2Number) {
+} else {
     document.querySelector(".winner").innerHTML = "Its a draw!!!";
 }
